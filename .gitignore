@@ -1,3 +1,20 @@
+# --- Custom Project Ignored Files ---
+
+# Security: Never commit API keys
+.env
+
+# Database: Ignore local SQLite database files so you don't overwrite each other's data
+*.db
+*.sqlite
+*.sqlite3
+aqi_data.db
+
+# Virtual Environments (just to be safe)
+.venv/
+venv/
+
+# Streamlit Cache
+.streamlit/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
