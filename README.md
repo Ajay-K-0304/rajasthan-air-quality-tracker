@@ -1,8 +1,8 @@
-Rajasthan Air Quality and Livability Tracker 
+# Rajasthan Air Quality and Livability Tracker 🌍
 
 A Python-based ETL pipeline and interactive Streamlit dashboard tracking real-time Air Quality Index (AQI) and PM2.5 levels across major cities in Rajasthan.
 
-Features
+## 🚀 Features
 
 Live API Extraction: Fetches real-time environmental data using the WAQI API.
 
@@ -14,7 +14,7 @@ Interactive Dashboard: Built with Streamlit, featuring dynamic scatter plots, hi
 
 Forecasting Engine: Implements a Statistical Simple Moving Average (SMA) model to predict short-term air quality trends.
 
-Tech Stack
+## 🛠️ Tech Stack
 
 Language: Python 3.11
 
@@ -24,38 +24,37 @@ Database: SQLite3
 
 Frontend UI: streamlit
 
- Installation & Setup
+## ⚙️ Installation & Setup
 
-1. Clone the repository and navigate to the folder:
+### 1. Clone the repository and navigate to the folder:
 
-git clone [https://github.com/Ajay-K-0304/rajasthan-aqi-tracker.git]
-(https://github.com/Ajay-K-0304/rajasthan-aqi-tracker.git)
+git clone [https://github.com/Ajay-K-0304/rajasthan-aqi-tracker.git](https://github.com/Ajay-K-0304/rajasthan-aqi-tracker.git)
 cd rajasthan-aqi-tracker
 
 
-2. Create and activate a virtual environment:
+### 2. Create and activate a virtual environment:
 
-# Windows
+## Windows
 python -m venv .venv
 .venv\Scripts\activate
 
-# Mac/Linux
+## Mac/Linux
 python3 -m venv .venv
 source .venv/bin/activate
 
 
-3. Install the required dependencies:
+### 3. Install the required dependencies:
 
 pip install requests pandas numpy streamlit
 
 
-4. Add your API Key:
+### 4. Add your API Key:
 
-Open etl.py and replace TOKEN with your free token from aqicn.org.
+Open etl.py and replace YOUR_TOKEN_HERE with your free token from aqicn.org.
 
-Running the Application
+## 🏃‍♂️ Running the Application
 
-Step 1: Extract and Load Data
+### Step 1: Extract and Load Data
 Run the ETL script to fetch live data from the internet, clean it, and store it in your local database (aqi_data.db).
 
 python etl.py
@@ -63,7 +62,7 @@ python etl.py
 
 (Tip: Run this command a few times throughout the day to build up a history of data for your charts!)
 
-Step 2: Launch the Dashboard
+### Step 2: Launch the Dashboard
 Start the Streamlit server to view the interactive web interface.
 
 streamlit run app.py
@@ -71,10 +70,8 @@ streamlit run app.py
 
 (If the command is not found, use python -m streamlit run app.py)
 
-Author
+# 👤 Author
 
-Name: [ Ajay Kumar Kumawat]
+**Name: Ajay Kumar Kumawat**
 
-Roll No: [23ESKIT014]
-
-Course: B.Tech
+**Roll No: 23ESKIT014**
