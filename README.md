@@ -28,7 +28,7 @@ Frontend UI: streamlit
 
 ### 1. Clone the repository and navigate to the folder:
 
-git clone [https://github.com/Ajay-K-0304/rajasthan-aqi-tracker](https://github.com/Ajay-K-0304/rajasthan-aqi-tracker)
+git clone [https://github.com/Ajay-K-0304/rajasthan-air-quality-tracker](https://github.com/Ajay-K-0304/rajasthan-air-quality-tracker)
 cd rajasthan-aqi-tracker
 
 
