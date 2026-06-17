@@ -1,5 +1,5 @@
 # --- Custom Project Ignored Files ---
-
+rough.py
 # Security: Never commit API keys
 .env
 
