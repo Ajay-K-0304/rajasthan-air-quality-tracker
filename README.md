@@ -1,4 +1,4 @@
-# Rajasthan Air Quality and Livability Tracker 🌍
+# Rajasthan Air Quality Tracker and Predictor🌍
 
 A Python-based ETL pipeline and interactive Streamlit dashboard tracking real-time Air Quality Index (AQI) and PM2.5 levels across major cities in Rajasthan.
 
