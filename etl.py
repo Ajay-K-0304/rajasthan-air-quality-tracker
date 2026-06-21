@@ -96,9 +96,17 @@ def fetchAndStoreData():
     #LOAD Using Pandas to SQL
     print("\nSaving to SQLite...")
     conn = initDb()
-    
-    #'append' adds the new DataFrame rows perfectly matching our SQLite columns.
-    df.to_sql("readings", conn, if_exists="append", index=False)
+    #Inserting multiple rows into Database
+    cur = conn.cursor()
+    cur.executemany(
+    """
+    INSERT INTO readings (timestamp, city, station, aqi, pm25)
+    VALUES (?, ?, ?, ?, ?)
+    """,
+    df[["timestamp", "city", "station", "aqi", "pm25"]].values.tolist()
+    )
+    conn.commit()
+
     
     conn.close()
     print("ETL process complete! Data safely stored.")
