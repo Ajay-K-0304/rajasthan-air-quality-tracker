@@ -93,17 +93,15 @@ def fetchAndStoreData():
     print("\nPreview of Cleaned DataFrame:")
     print(df.head())
 
-    # ==========================================
-    # 3. LOAD (Using Pandas to SQL)
-    # ==========================================
+    #LOAD Using Pandas to SQL
     print("\nSaving to SQLite...")
     conn = initDb()
     
-    # 'append' adds the new DataFrame rows perfectly matching our SQLite columns.
+    #'append' adds the new DataFrame rows perfectly matching our SQLite columns.
     df.to_sql("readings", conn, if_exists="append", index=False)
     
     conn.close()
-    print("🎉 ETL process complete! Data safely stored.")
+    print("ETL process complete! Data safely stored.")
 
 if __name__ == "__main__":
     fetchAndStoreData()
